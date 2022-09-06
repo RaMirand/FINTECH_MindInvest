@@ -3,11 +3,11 @@ package br.com.minds.mindinvest;
 public class Investimento {
 	
 	private String idInvestimento;
-	public String tipoInvestimento;
+	private String tipoInvestimento;
 	private float valorInvestido;
 	private float valorAtual;
-	public boolean status;
-	public Carteira carteira;
+	private boolean status;
+	private Carteira carteira;
 	
 	
 	public String getIdInvestimento() {
@@ -41,9 +41,6 @@ public class Investimento {
 		this.status = status;
 	}
 	public Carteira getCarteira() {
-		carteira.getUsuario();
-		carteira.getNomeCarteira();
-		carteira.getTipoCarteira();
 		return carteira;
 	}
 	public void setCarteira(Carteira carteira) {

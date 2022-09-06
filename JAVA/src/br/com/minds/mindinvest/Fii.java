@@ -4,7 +4,7 @@ public class Fii extends Investimento {
 	
 	private String ticker;
 	private String nomeFII;
-	public Investimento investimento;
+	private Investimento investimento;
 	
 	
 	public String getTicker() {

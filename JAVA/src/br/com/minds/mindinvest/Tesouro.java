@@ -7,9 +7,9 @@ public class Tesouro extends Investimento {
 	private String codigoSelic;
 	private String titulo;
 	private String descTitulo;
-	private String nomeTitulo;
 	private int qtdTesouto;
 	private Date dataVencimento;
+	private Investimento investimento;
 	
 	
 	public String getCodigoSelic() {
@@ -30,12 +30,6 @@ public class Tesouro extends Investimento {
 	public void setDescTitulo(String descTitulo) {
 		this.descTitulo = descTitulo;
 	}
-	public String getNomeTitulo() {
-		return nomeTitulo;
-	}
-	public void setNomeTitulo(String nomeTitulo) {
-		this.nomeTitulo = nomeTitulo;
-	}
 	public int getQtdTesouto() {
 		return qtdTesouto;
 	}
@@ -48,5 +42,13 @@ public class Tesouro extends Investimento {
 	public void setDataVencimento(Date dataVencimento) {
 		this.dataVencimento = dataVencimento;
 	}
-	
+	public Tesouro(Carteira carteira, String tipoInvestimento, boolean status, String codigoSelic, String titulo,
+			String descTitulo, int qtdTesouto, Date dataVencimento) {
+		super(carteira, tipoInvestimento, status);
+		this.codigoSelic = codigoSelic;
+		this.titulo = titulo;
+		this.descTitulo = descTitulo;
+		this.qtdTesouto = qtdTesouto;
+		this.dataVencimento = dataVencimento;
+	}
 }

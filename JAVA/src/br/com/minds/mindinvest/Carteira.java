@@ -3,9 +3,9 @@ package br.com.minds.mindinvest;
 public class Carteira {
 	
 	private String idCarteira;
-	public String nomeCarteira;
+	private String nomeCarteira;
 	private String tipoCarteira;
-	public Usuario usuario;
+	private Usuario usuario;
 	
 	
 	public String getIdCarteira() {
@@ -15,7 +15,6 @@ public class Carteira {
 		this.idCarteira = idCarteira;
 	}
 	public String getNomeCarteira() {
-		System.out.println(nomeCarteira);
 		return nomeCarteira;
 	}
 	public void setNomeCarteira(String nomeCarteira) {
@@ -29,8 +28,6 @@ public class Carteira {
 		this.tipoCarteira = tipoCarteira;
 	}
 	public Usuario getUsuario() {
-		usuario.getNomeUsuario();
-		usuario.getEmailUsuario();
 		return usuario;
 	}
 	public void setUsuario(Usuario usuario) {
@@ -42,5 +39,4 @@ public class Carteira {
 		this.nomeCarteira = nomeCarteira;
 		this.tipoCarteira = tipoCarteira;
 	}
-
 }

@@ -5,7 +5,7 @@ public class Fundo extends Investimento {
 	private String nomeFundo;
 	private String classeFundo;
 	private String cnpjFundo;	
-	public Investimento investimento;
+	private Investimento investimento;
 	
 	public String getNomeFundo() {
 		return nomeFundo;
@@ -25,12 +25,6 @@ public class Fundo extends Investimento {
 	public void setCnpjFundo(String cnpjFundo) {
 		this.cnpjFundo = cnpjFundo;
 	}
-//	public Fundo(Investimento investimento, String nomeFundo, String classeFundo, String cnpjFundo) {
-//		super();
-//		this.nomeFundo = nomeFundo;
-//		this.classeFundo = classeFundo;
-//		this.cnpjFundo = cnpjFundo;		
-//	}
 	public Fundo(Carteira carteira, String tipoInvestimento, boolean status, String nomeFundo, String classeFundo,
 			String cnpjFundo, Investimento investimento) {
 		super(carteira, tipoInvestimento, status);
